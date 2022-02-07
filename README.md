@@ -4,9 +4,9 @@ It is a static html 5 website containing the professional information of a DevOp
 
 Technologies:
 
-HTML5
-AWS:
-Amazon Clound Front
-Amazon S3 bucket
-Amazon Cloud Watch
-Amazon Route53
+## HTML5
+## AWS:
+### Amazon Clound Front
+### Amazon S3 bucket
+### Amazon Cloud Watch
+### Amazon Route53
