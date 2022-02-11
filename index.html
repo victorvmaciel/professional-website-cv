@@ -29,7 +29,7 @@
 							<div class="inner">
 								<h1>Victor Maciel - Professional Portfolio</h1>
 								<p><!--[-->A fully responsive site template designed by <a href="https://www.linkedin.com/in/victorvmaciel/">Victor Maciel</a> and released<!--]--><br />
-								<!--[-->for free under the <a href="https://html5up.net/license">Creative Commons</a> license.<!--]--></p>
+								
 							</div>
 						</div>
 						<nav>
@@ -101,30 +101,45 @@
 
 						<!-- Contact -->
 							<article id="contact">
+
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+
+									<!--<form method="post" action="https://api.staticforms.xyz/submit"> -->
+									
+									<form action="https://formsubmit.co/7a0902423443d844251039f2b895702f" method="POST">
+
+									<input type="hidden" name="_next" value="https://viktorops.tech/#contact"> 
+
+									<input type="text" name="_honey" style="display:none">
+									<input type="hidden" name="_captcha" value="false">
+									
+
 									<div class="field half first">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" value=""/>
 									</div>
 									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<label for="demo-email">Email</label>
+										<input type="email" name="email" id="demo-email" value="" />
 									</div>
+
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 									</div>
+
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="submit" onclick="alert('E-mail enviado com sucesso!')" value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+
 								</form>
+
 								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/viktorvmaciel" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/victorvieiramaciel" target="_blank"  class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/_viktorvieira/" target="_blank"  class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/victorvmaciel" target="_blank"  class="icon fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -320,14 +335,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								<section>
 									<h3 class="major">Form</h3>
-									<form method="post" action="#">
+									<form method="post" action="https://api.staticforms.xyz/submit">
+
+										<input type="hidden" name="acessKey" value="9b5e5a0f-304e-4be2-a0b6-7b8ac5d14dc4">
+
 										<div class="field half first">
 											<label for="demo-name">Name</label>
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											<input type="text" name="name" id="demo-name" value=""  />
 										</div>
 										<div class="field half">
 											<label for="demo-email">Email</label>
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											<input type="email" name="email" id="demo-email" value="" />
 										</div>
 										<div class="field">
 											<label for="demo-category">Category</label>
@@ -359,10 +377,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										</div>
 										<div class="field">
 											<label for="demo-message">Message</label>
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 										</div>
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" class="special" /></li>
+
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</form>
@@ -388,5 +407,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script src="assets/js/send-mail.js"></script>
 	</body>
 </html>
