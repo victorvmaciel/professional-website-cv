@@ -6,7 +6,7 @@ Limite diário free tier: 200 e-mails
 
 
 */
-function submitToAPI(e) {
+function postToAWS(e) {
     e.preventDefault();
     //URL 
     var URL = "https://jbacgtjfkk.execute-api.us-east-1.amazonaws.com/prod";
