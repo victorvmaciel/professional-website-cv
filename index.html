@@ -111,15 +111,19 @@
 
 								<h2 class="major">Contact</h2>
 
-									<!--<form method="post" action="https://api.staticforms.xyz/submit"> -->
-									
-									<form action="https://formsubmit.co/7a0902423443d844251039f2b895702f" method="POST">
 
-									<input type="hidden" name="_next" value="https://viktorops.tech/#thanks"> 
+								<form method="POST" id="contact-form">
+								
+									<!--<form method="post" action="https://api.staticforms.xyz/submit"> 
+									
+									
+
+									< <input type="hidden" name="_next" value="https://viktorops.tech/#thanks">  
 
 									<input type="text" name="_honey" style="display:none">
+
 									<input type="hidden" name="_captcha" value="false">
-									
+									-->
 
 									<div class="field half first">
 										<label for="name">Name</label>
@@ -127,18 +131,19 @@
 									</div>
 									<div class="field half">
 										<label for="demo-email">Email</label>
-										<input type="email" name="email" id="demo-email" required value="" />
+										<input type="email" name="email" id="email" required value="" />
 									</div>
 
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="demo-message" placeholder="Enter your message" required rows="6"></textarea>
+										<textarea name="message" id="message" placeholder="Enter your message" required rows="6"></textarea>
 									</div>
 
 									<ul class="actions">
-										<li><input type="submit"  value="Send Message" class="special" /></li>
+										<li><input onClick="submitToAPI(event)" type="submit"  value="Send Message" class="special" /></li>
 										<li><input type="reset" value="Reset" /></li>
-									</ul>
+										
+									</ul>						
 
 								</form>
 
@@ -441,7 +446,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<script src="assets/js/send-mail.js"></script>
+			<script src="assets/js/post.js"></script>
 	</body>
 </html>
