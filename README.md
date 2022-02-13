@@ -1,6 +1,6 @@
 # Webpage using Amazon Web Services
 
-![](https://ibb.co/BK2s1Zs)
+![lambda aws](https://ibb.co/Fx2pX1Y)
 
 ## About
 
